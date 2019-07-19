@@ -1,14 +1,16 @@
+package com.nasir.sample;
 //STEP 1. Import required packages
 import java.sql.*;
 
-public class JDBC_Example {
+public class JDBC_Insert_Records {
    // JDBC driver name and database URL
-   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-   static final String DB_URL = "jdbc:mysql://localhost/STUDENTS";
+	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	   static final String DB_URL = "jdbc:mysql://localhost:3306/emp?useSSL=false&useTimezone=true&serverTimezone=UTC";
+
 
    //  Database credentials
-   static final String USER = "username";
-   static final String PASS = "password";
+   static final String USER = "root";
+   static final String PASS = "admin";
    
    public static void main(String[] args) {
    Connection conn = null;
